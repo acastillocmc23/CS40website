@@ -29,8 +29,6 @@ header {
     transform: translate(-50%, -50%);
 }
 
-
-
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
@@ -38,6 +36,8 @@ header {
 
 main p {
     font-family: 'Brush Script MT', cursive; /* Script font for paragraph */
+    font-size: 1.5em; /* Bigger text for the body paragraph */
+}
 }
 
 footer {
