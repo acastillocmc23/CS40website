@@ -1,18 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 1in; /* 1 inch margins */
     padding: 0;
-    background-color: gold;
-    color: lightblue;
+    background-color: blue; /* Changed to blue */
+    color: white; /* Changed to white lettering */
 }
 
 header {
     text-align: center;
     position: relative;
+    margin-bottom: 2em; /* Added space between the title and body */
 }
 
 #globe-container img {
-    width: 150px; /* Adjust as necessary */
+    width: 150px;
     animation: spin 10s linear infinite;
 }
 
@@ -28,19 +29,26 @@ header {
     transform: translate(-50%, -50%);
 }
 
+
+
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
 }
 
+main p {
+    font-family: 'Brush Script MT', cursive; /* Script font for paragraph */
+}
+
 footer {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: calc(100% - 2in); /* Adjust width considering margins */
     text-align: center;
+    left: 1in; /* Align with the body's left margin */
 }
 
 footer a {
-    color: lightblue;
+    color: white; /* Adjust to white for visibility on blue background */
     text-decoration: none;
 }
